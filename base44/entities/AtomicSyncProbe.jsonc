@@ -1,0 +1,60 @@
+{
+  "name": "AtomicSyncProbe",
+  "type": "object",
+  "properties": {
+    "disposable": {
+      "type": "boolean",
+      "enum": [
+        true
+      ]
+    },
+    "ownerUserId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "runId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "businessId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "recordUUID": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "writerId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "payload": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "deleted": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "disposable",
+    "ownerUserId",
+    "runId",
+    "businessId",
+    "recordUUID",
+    "revision",
+    "writerId",
+    "payload",
+    "deleted"
+  ],
+  "rls": {
+    "create": false,
+    "read": false,
+    "update": false,
+    "delete": false
+  }
+}
