@@ -1,0 +1,85 @@
+{
+  "type": "report",
+  "gate": "creation-and-idempotency",
+  "runId": "104c7946-dae1-4b2d-9555-2114d87ccb76",
+  "checks": [
+    {
+      "name": "concurrent-creation-0",
+      "passed": true,
+      "writers": 8,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "distinctIDs": 1,
+      "errors": [],
+      "created": 1,
+      "elapsedMs": 1741
+    },
+    {
+      "name": "concurrent-creation-1",
+      "passed": false,
+      "writers": 8,
+      "statuses": [
+        503,
+        503,
+        503,
+        503,
+        503,
+        503,
+        503,
+        503
+      ],
+      "distinctIDs": 1,
+      "errors": [
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        }
+      ],
+      "created": 0,
+      "elapsedMs": 1205
+    }
+  ],
+  "passed": false,
+  "failure": "CONCURRENT_CREATION_1",
+  "cleanup": {
+    "status": 200,
+    "remaining": 0
+  },
+  "finishedAt": "2026-10-10T23:36:33.622Z"
+}

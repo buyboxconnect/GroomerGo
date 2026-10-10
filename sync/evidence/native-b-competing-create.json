@@ -1,0 +1,21 @@
+{
+  "downloadedRevision": 1,
+  "localRecordCount": 1,
+  "passed": true,
+  "phase": "competing-create",
+  "queue": [
+    {
+      "attempts": 1,
+      "hasFrozenRequest": true,
+      "operationId": "091e5806-7887-49da-84ae-2d0829f84ddb",
+      "state": "conflict"
+    }
+  ],
+  "recordUUID": "1899d1c8-37eb-4027-9a0e-dbd93e6eb14e",
+  "requestSHA256": "9283ed346a29e778e7bf36d22bc4992e6e4e378181e2fef831c51a957816605e",
+  "runId": "13fd4a14-d78d-4d66-aa91-ba334880c652",
+  "serverRevision": 1,
+  "sessionRestoredFromKeychain": false,
+  "simulatorId": "1E50A7A1-6265-4731-825A-E4AB0D7921BA",
+  "device": "b"
+}

@@ -1,0 +1,366 @@
+{
+  "type": "report",
+  "gate": "creation-and-idempotency",
+  "runId": "0851b829-0af2-4ae6-9fa3-72c396b0f3d6",
+  "checks": [
+    {
+      "name": "concurrent-creation-0",
+      "passed": true,
+      "writers": 8,
+      "storedMatches": 1,
+      "storedRunCount": 1,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "distinctIDs": 1,
+      "errors": [],
+      "created": 1,
+      "elapsedMs": 1134,
+      "settledMatches": 1
+    },
+    {
+      "name": "concurrent-creation-1",
+      "passed": true,
+      "writers": 8,
+      "storedMatches": 1,
+      "storedRunCount": 2,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "distinctIDs": 1,
+      "errors": [],
+      "created": 1,
+      "elapsedMs": 1117,
+      "settledMatches": 1
+    },
+    {
+      "name": "concurrent-creation-2",
+      "passed": false,
+      "writers": 8,
+      "storedMatches": 2,
+      "storedRunCount": 4,
+      "statuses": [
+        503,
+        503,
+        503,
+        503,
+        503,
+        503,
+        503,
+        503
+      ],
+      "distinctIDs": 1,
+      "errors": [
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        }
+      ],
+      "created": 0,
+      "elapsedMs": 1201,
+      "settledMatches": 2
+    },
+    {
+      "name": "concurrent-creation-3",
+      "passed": true,
+      "writers": 8,
+      "storedMatches": 1,
+      "storedRunCount": 5,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "distinctIDs": 1,
+      "errors": [],
+      "created": 1,
+      "elapsedMs": 3231,
+      "settledMatches": 1
+    },
+    {
+      "name": "concurrent-creation-4",
+      "passed": false,
+      "writers": 8,
+      "storedMatches": 0,
+      "storedRunCount": 5,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "distinctIDs": 1,
+      "errors": [],
+      "created": 1,
+      "elapsedMs": 960,
+      "settledMatches": 1
+    },
+    {
+      "name": "concurrent-creation-5",
+      "passed": true,
+      "writers": 8,
+      "storedMatches": 1,
+      "storedRunCount": 7,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "distinctIDs": 1,
+      "errors": [],
+      "created": 1,
+      "elapsedMs": 1017,
+      "settledMatches": 1
+    },
+    {
+      "name": "concurrent-creation-6",
+      "passed": false,
+      "writers": 8,
+      "storedMatches": 2,
+      "storedRunCount": 9,
+      "statuses": [
+        503,
+        503,
+        503,
+        503,
+        503,
+        503,
+        503,
+        503
+      ],
+      "distinctIDs": 1,
+      "errors": [
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        }
+      ],
+      "created": 0,
+      "elapsedMs": 1213,
+      "settledMatches": 2
+    },
+    {
+      "name": "concurrent-creation-7",
+      "passed": false,
+      "writers": 8,
+      "storedMatches": 2,
+      "storedRunCount": 11,
+      "statuses": [
+        503,
+        503,
+        503,
+        503,
+        503,
+        503,
+        503,
+        503
+      ],
+      "distinctIDs": 1,
+      "errors": [
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        }
+      ],
+      "created": 0,
+      "elapsedMs": 1182,
+      "settledMatches": 2
+    },
+    {
+      "name": "concurrent-creation-8",
+      "passed": false,
+      "writers": 8,
+      "storedMatches": 2,
+      "storedRunCount": 13,
+      "statuses": [
+        503,
+        503,
+        503,
+        503,
+        503,
+        503,
+        503,
+        503
+      ],
+      "distinctIDs": 1,
+      "errors": [
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        },
+        {
+          "status": 503,
+          "code": "DUPLICATE_OR_MISSING_IDENTITY"
+        }
+      ],
+      "created": 0,
+      "elapsedMs": 1341,
+      "settledMatches": 2
+    },
+    {
+      "name": "concurrent-creation-9",
+      "passed": true,
+      "writers": 8,
+      "storedMatches": 1,
+      "storedRunCount": 14,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "distinctIDs": 1,
+      "errors": [],
+      "created": 1,
+      "elapsedMs": 1103,
+      "settledMatches": 1
+    }
+  ],
+  "passed": false,
+  "failure": "HARNESS_FAILED",
+  "cleanup": {
+    "status": 200,
+    "remaining": 0
+  },
+  "finishedAt": "2026-10-10T23:46:16.440Z"
+}

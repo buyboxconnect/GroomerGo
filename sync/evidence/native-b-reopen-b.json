@@ -1,0 +1,19 @@
+{
+  "localRecordCount": 1,
+  "passed": true,
+  "phase": "reopen-b",
+  "queue": [
+    {
+      "attempts": 1,
+      "hasFrozenRequest": true,
+      "operationId": "091e5806-7887-49da-84ae-2d0829f84ddb",
+      "state": "conflict"
+    }
+  ],
+  "recordUUID": "1899d1c8-37eb-4027-9a0e-dbd93e6eb14e",
+  "runId": "13fd4a14-d78d-4d66-aa91-ba334880c652",
+  "serverRevision": 1,
+  "sessionRestoredFromKeychain": true,
+  "simulatorId": "1E50A7A1-6265-4731-825A-E4AB0D7921BA",
+  "device": "b"
+}

@@ -1,0 +1,68 @@
+{
+  "type": "report",
+  "gate": "creation-and-idempotency",
+  "runId": "fd169b2d-5103-45f8-9c12-be729d121507",
+  "checks": [
+    {
+      "name": "concurrent-creation-0",
+      "passed": true,
+      "writers": 8,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "distinctIDs": 1,
+      "created": 1,
+      "elapsedMs": 1299
+    },
+    {
+      "name": "concurrent-creation-1",
+      "passed": true,
+      "writers": 8,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "distinctIDs": 1,
+      "created": 1,
+      "elapsedMs": 3123
+    },
+    {
+      "name": "concurrent-creation-2",
+      "passed": false,
+      "writers": 8,
+      "statuses": [
+        503,
+        503,
+        503,
+        503,
+        503,
+        503,
+        503,
+        503
+      ],
+      "distinctIDs": 1,
+      "created": 0,
+      "elapsedMs": 1208
+    }
+  ],
+  "passed": false,
+  "failure": "CONCURRENT_CREATION_2",
+  "cleanup": {
+    "status": 200,
+    "remaining": 0
+  },
+  "finishedAt": "2026-10-10T23:35:57.702Z"
+}

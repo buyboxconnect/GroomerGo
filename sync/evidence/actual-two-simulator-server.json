@@ -1,0 +1,21 @@
+{
+  "type": "report",
+  "gate": "actual-two-simulator-server-verification",
+  "runId": "13fd4a14-d78d-4d66-aa91-ba334880c652",
+  "passed": true,
+  "inspectStatus": 200,
+  "records": [
+    {
+      "recordUUID": "1899d1c8-37eb-4027-9a0e-dbd93e6eb14e",
+      "revision": 1,
+      "receiptCount": 1
+    }
+  ],
+  "count": 1,
+  "cleanup": {
+    "status": 200,
+    "remaining": 0,
+    "deleted": 1
+  },
+  "finishedAt": "2026-10-10T23:46:50.903Z"
+}

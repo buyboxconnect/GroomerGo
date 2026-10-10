@@ -1,0 +1,101 @@
+{
+  "type": "report",
+  "gate": "creation-and-idempotency",
+  "runId": "871d6e26-c983-4bba-9ec5-dfcbc9c32ba5",
+  "checks": [
+    {
+      "name": "concurrent-creation-0",
+      "passed": true,
+      "writers": 8,
+      "storedMatches": 1,
+      "storedRunCount": 1,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "distinctIDs": 1,
+      "errors": [],
+      "created": 1,
+      "elapsedMs": 1281
+    },
+    {
+      "name": "concurrent-creation-1",
+      "passed": true,
+      "writers": 8,
+      "storedMatches": 1,
+      "storedRunCount": 2,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "distinctIDs": 1,
+      "errors": [],
+      "created": 1,
+      "elapsedMs": 1135
+    },
+    {
+      "name": "concurrent-creation-2",
+      "passed": true,
+      "writers": 8,
+      "storedMatches": 1,
+      "storedRunCount": 3,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "distinctIDs": 1,
+      "errors": [],
+      "created": 1,
+      "elapsedMs": 3358
+    },
+    {
+      "name": "concurrent-identical-operation",
+      "passed": true,
+      "applied": 1,
+      "replayed": 7,
+      "revision": 1,
+      "receiptCount": 1
+    },
+    {
+      "name": "lost-response-retry",
+      "passed": true
+    },
+    {
+      "name": "operation-id-reuse-rejected",
+      "passed": true
+    },
+    {
+      "name": "different-operation-conflict",
+      "passed": true
+    },
+    {
+      "name": "old-receipt-does-not-reset-record",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "nativeRunId": "13fd4a14-d78d-4d66-aa91-ba334880c652",
+  "cleanup": {
+    "status": 200,
+    "remaining": 0
+  },
+  "finishedAt": "2026-10-10T23:38:25.747Z"
+}
