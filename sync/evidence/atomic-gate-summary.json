@@ -1,0 +1,52 @@
+{
+  "gate": "base44-existing-record-compare-and-update",
+  "passed": true,
+  "verifiedAt": "2026-10-10T21:32:26.122Z",
+  "backendSdkVersion": "0.8.53",
+  "editRace": {
+    "rounds": 10,
+    "writersPerRound": 8,
+    "applied": 10,
+    "conflicts": 70,
+    "passed": true
+  },
+  "scopeAndTombstonePassed": true,
+  "cleanupPassed": true,
+  "postChecksPassed": true,
+  "runs": [
+    {
+      "runId": "801da5cc-09f9-4f73-945a-838e7b35d8a9",
+      "startedAt": "2026-10-10T21:24:45.549Z",
+      "finishedAt": "2026-10-10T21:28:03.334Z",
+      "originalReportPassed": false,
+      "failures": [
+        "WRONG_SCOPE_ACCEPTED"
+      ],
+      "cleanup": {
+        "status": 200,
+        "deleted": 1,
+        "remaining": 0
+      }
+    },
+    {
+      "runId": "15bf8229-74e5-493a-b9b4-f274d4a03ada",
+      "startedAt": "2026-10-10T21:30:34.914Z",
+      "finishedAt": "2026-10-10T21:32:02.075Z",
+      "originalReportPassed": true,
+      "failures": [],
+      "cleanup": {
+        "status": 200,
+        "deleted": 2,
+        "remaining": 0
+      }
+    }
+  ],
+  "qualification": "Composite evidence: ten successful edit races from the first paced run, plus scope/tombstone cases from a focused follow-up. The first full report failed after its successful races because the missing-id test used a malformed internal ID; the focused follow-up corrects that test. No failed race is treated as a pass.",
+  "notVerified": [
+    "Unique concurrent record creation",
+    "Atomic durable operation receipts",
+    "Transactions across entities",
+    "Two actual iOS devices and relaunch persistence"
+  ],
+  "liveUploadsEnabled": false
+}

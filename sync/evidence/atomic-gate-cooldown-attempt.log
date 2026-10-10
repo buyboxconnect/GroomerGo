@@ -1,0 +1,2 @@
+{"type":"start","runId":"84973489-622f-47b9-9a34-97b261338967","gate":"base44-existing-record-cas"}
+{"type":"report","gate":"base44-existing-record-cas","runId":"84973489-622f-47b9-9a34-97b261338967","sdkVersion":"0.8.53","pacingMs":12000,"startedAt":"2026-10-10T21:24:08.348Z","rounds":[],"checks":[],"failures":["BASELINE_WRITE_FAILED"],"cleanup":{"status":200,"deleted":1,"remaining":0},"passed":false,"finishedAt":"2026-10-10T21:24:09.573Z"}

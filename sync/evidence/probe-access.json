@@ -1,0 +1,8 @@
+{
+  "check": "anonymous-probe-denied",
+  "status": 401,
+  "responseCode": "PROBE_REQUEST_FAILED",
+  "passed": true,
+  "schemaDirectCRUD": { "create": false, "read": false, "update": false, "delete": false },
+  "scope": "Live anonymous HTTP request and connected deployed schema inspection. Non-admin authenticated access is covered by unit tests only."
+}

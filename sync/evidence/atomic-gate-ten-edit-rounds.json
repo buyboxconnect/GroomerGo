@@ -1,0 +1,257 @@
+{
+  "type": "report",
+  "gate": "base44-existing-record-cas",
+  "runId": "801da5cc-09f9-4f73-945a-838e7b35d8a9",
+  "sdkVersion": "0.8.53",
+  "pacingMs": 12000,
+  "initialCooldownMs": 65000,
+  "startedAt": "2026-10-10T21:24:45.549Z",
+  "rounds": [
+    {
+      "label": "edit-1",
+      "writers": 8,
+      "dispatchSpanMs": 0,
+      "elapsedMs": 847,
+      "applied": 1,
+      "conflicts": 7,
+      "statuses": [
+        409,
+        409,
+        200,
+        409,
+        409,
+        409,
+        409,
+        409
+      ],
+      "upstreamFailures": [],
+      "expectedRevision": 2,
+      "storedRevision": 3,
+      "payloadMatchesWinner": true,
+      "passed": true
+    },
+    {
+      "label": "edit-2",
+      "writers": 8,
+      "dispatchSpanMs": 2,
+      "elapsedMs": 938,
+      "applied": 1,
+      "conflicts": 7,
+      "statuses": [
+        409,
+        409,
+        409,
+        200,
+        409,
+        409,
+        409,
+        409
+      ],
+      "upstreamFailures": [],
+      "expectedRevision": 3,
+      "storedRevision": 4,
+      "payloadMatchesWinner": true,
+      "passed": true
+    },
+    {
+      "label": "edit-3",
+      "writers": 8,
+      "dispatchSpanMs": 1,
+      "elapsedMs": 939,
+      "applied": 1,
+      "conflicts": 7,
+      "statuses": [
+        409,
+        409,
+        409,
+        200,
+        409,
+        409,
+        409,
+        409
+      ],
+      "upstreamFailures": [],
+      "expectedRevision": 4,
+      "storedRevision": 5,
+      "payloadMatchesWinner": true,
+      "passed": true
+    },
+    {
+      "label": "edit-4",
+      "writers": 8,
+      "dispatchSpanMs": 2,
+      "elapsedMs": 825,
+      "applied": 1,
+      "conflicts": 7,
+      "statuses": [
+        409,
+        409,
+        200,
+        409,
+        409,
+        409,
+        409,
+        409
+      ],
+      "upstreamFailures": [],
+      "expectedRevision": 5,
+      "storedRevision": 6,
+      "payloadMatchesWinner": true,
+      "passed": true
+    },
+    {
+      "label": "edit-5",
+      "writers": 8,
+      "dispatchSpanMs": 1,
+      "elapsedMs": 917,
+      "applied": 1,
+      "conflicts": 7,
+      "statuses": [
+        200,
+        409,
+        409,
+        409,
+        409,
+        409,
+        409,
+        409
+      ],
+      "upstreamFailures": [],
+      "expectedRevision": 6,
+      "storedRevision": 7,
+      "payloadMatchesWinner": true,
+      "passed": true
+    },
+    {
+      "label": "edit-6",
+      "writers": 8,
+      "dispatchSpanMs": 0,
+      "elapsedMs": 809,
+      "applied": 1,
+      "conflicts": 7,
+      "statuses": [
+        409,
+        409,
+        409,
+        200,
+        409,
+        409,
+        409,
+        409
+      ],
+      "upstreamFailures": [],
+      "expectedRevision": 7,
+      "storedRevision": 8,
+      "payloadMatchesWinner": true,
+      "passed": true
+    },
+    {
+      "label": "edit-7",
+      "writers": 8,
+      "dispatchSpanMs": 2,
+      "elapsedMs": 885,
+      "applied": 1,
+      "conflicts": 7,
+      "statuses": [
+        409,
+        409,
+        409,
+        409,
+        409,
+        409,
+        409,
+        200
+      ],
+      "upstreamFailures": [],
+      "expectedRevision": 8,
+      "storedRevision": 9,
+      "payloadMatchesWinner": true,
+      "passed": true
+    },
+    {
+      "label": "edit-8",
+      "writers": 8,
+      "dispatchSpanMs": 0,
+      "elapsedMs": 844,
+      "applied": 1,
+      "conflicts": 7,
+      "statuses": [
+        409,
+        409,
+        409,
+        409,
+        409,
+        409,
+        409,
+        200
+      ],
+      "upstreamFailures": [],
+      "expectedRevision": 9,
+      "storedRevision": 10,
+      "payloadMatchesWinner": true,
+      "passed": true
+    },
+    {
+      "label": "edit-9",
+      "writers": 8,
+      "dispatchSpanMs": 1,
+      "elapsedMs": 916,
+      "applied": 1,
+      "conflicts": 7,
+      "statuses": [
+        200,
+        409,
+        409,
+        409,
+        409,
+        409,
+        409,
+        409
+      ],
+      "upstreamFailures": [],
+      "expectedRevision": 10,
+      "storedRevision": 11,
+      "payloadMatchesWinner": true,
+      "passed": true
+    },
+    {
+      "label": "edit-10",
+      "writers": 8,
+      "dispatchSpanMs": 0,
+      "elapsedMs": 966,
+      "applied": 1,
+      "conflicts": 7,
+      "statuses": [
+        200,
+        409,
+        409,
+        409,
+        409,
+        409,
+        409,
+        409
+      ],
+      "upstreamFailures": [],
+      "expectedRevision": 11,
+      "storedRevision": 12,
+      "payloadMatchesWinner": true,
+      "passed": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "baseline-and-stale-revision",
+      "passed": true
+    }
+  ],
+  "failures": [
+    "WRONG_SCOPE_ACCEPTED"
+  ],
+  "cleanup": {
+    "status": 200,
+    "deleted": 1,
+    "remaining": 0
+  },
+  "passed": false,
+  "finishedAt": "2026-10-10T21:28:03.334Z"
+}
