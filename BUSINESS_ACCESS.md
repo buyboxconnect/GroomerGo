@@ -25,3 +25,5 @@ Existing snapshots are preserved and quarantined, not assigned to a business bas
 Remaining: live RLS tests with two ordinary accounts, stable record UUIDs/businessId on all operational records, atomic revisions/conflicts, deletion markers, migration of existing records, two-device transfers, app relaunch/session persistence tests, and server-authoritative booking reservations. Do not claim production-safe synchronization from this foundation.
 
 The updated iOS app builds successfully for generic iOS Simulator using full Xcode (`CODE_SIGNING_ALLOWED=NO`). This is compilation, not an executed device or session-persistence test.
+
+GitHub editor publishing did not deploy the new function directories and interpreted lowercase entity filenames as names. The three functions were explicitly deployed from the same source with no pruning. Schemas were applied via the Base44 schema API and reconciled to the canonical PascalCase files it writes. Verify backend deployment separately from frontend publication on future releases.

@@ -37,7 +37,7 @@ test('failed onboarding leaves a pending business inaccessible',async()=>{
  const f=fixture('new-owner');f.entities.BusinessMembership.create=async()=>{throw Error('sensitive diagnostic')};const C='33333333-3333-4333-8333-333333333333';const r=await handleBusinessAccess(req({action:'create',name:'Demo'}),f.client,()=>C);assert.equal(r.status,500);assert.equal(f.records.Business.at(-1).status,'pending');assert.ok(!(await r.text()).includes('sensitive'));await assert.rejects(authorizeBusiness(f.entities,'new-owner',C));
 });
 test('all tenant entities deny direct CRUD; snapshots require businessId',()=>{
- for(const name of ['business','business-membership','business-snapshot']){const s=JSON.parse(readFileSync(new URL('../base44/entities/'+name+'.jsonc',import.meta.url)));assert.deepEqual(s.rls,{create:false,read:false,update:false,delete:false});assert.ok(s.required.includes('businessId'))}
+ for(const name of ['Business','BusinessMembership','BusinessSnapshot']){const s=JSON.parse(readFileSync(new URL('../base44/entities/'+name+'.jsonc',import.meta.url)));assert.deepEqual(s.rls,{create:false,read:false,update:false,delete:false});assert.ok(s.required.includes('businessId'))}
 });
 test('malformed input and no identity never reach business entities',async()=>{
  const f=fixture();assert.equal((await handleBusinessAccess(req(null),f.client)).status,400);f.client.auth.me=async()=>null;assert.equal((await handleBusinessAccess(req({action:'create',name:'X'}),f.client)).status,401);assert.equal(f.writes.length,0);
