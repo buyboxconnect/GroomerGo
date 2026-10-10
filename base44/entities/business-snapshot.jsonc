@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "name": "BusinessSnapshot",
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "description": "Version of the encoded GroomerGo workspace schema",
+      "minimum": 1
+    },
+    "revision": {
+      "type": "integer",
+      "description": "Optimistic concurrency revision",
+      "minimum": 1
+    },
+    "payload": {
+      "type": "string",
+      "description": "JSON-encoded business workspace owned by the authenticated groomer"
+    },
+    "source_device": {
+      "type": "string",
+      "description": "Non-secret installation identifier for diagnostics"
+    },
+    "client_updated_at": {
+      "type": "string",
+      "description": "Client timestamp for display only; never used as authority",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "schema_version",
+    "revision",
+    "payload",
+    "source_device"
+  ],
+  "rls": {
+    "create": true,
+    "read": {
+      "created_by": "{{user.email}}"
+    },
+    "update": {
+      "created_by": "{{user.email}}"
+    },
+    "delete": {
+      "created_by": "{{user.email}}"
+    }
+  }
+}
