@@ -24,24 +24,24 @@
       "type": "string",
       "description": "Client timestamp for display only; never used as authority",
       "format": "date-time"
+    },
+    "businessId": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Legacy snapshots without this field are quarantined; never infer a business from email."
     }
   },
   "required": [
     "schema_version",
     "revision",
     "payload",
-    "source_device"
+    "source_device",
+    "businessId"
   ],
   "rls": {
-    "create": true,
-    "read": {
-      "created_by": "{{user.email}}"
-    },
-    "update": {
-      "created_by": "{{user.email}}"
-    },
-    "delete": {
-      "created_by": "{{user.email}}"
-    }
+    "create": false,
+    "read": false,
+    "update": false,
+    "delete": false
   }
 }
