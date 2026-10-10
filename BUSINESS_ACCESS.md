@@ -23,3 +23,5 @@ Existing snapshots are preserved and quarantined, not assigned to a business bas
 13 Node tests pass, covering booking logic plus authentication failure, read-only connection behavior, cross-business denial with forged inputs and platform admin role, inactive/ambiguous membership, server-assigned ownership, failed onboarding, and static deny-by-default schemas. These tests use disposable in-memory fixtures, not live two-device accounts. Web production build passes.
 
 Remaining: live RLS tests with two ordinary accounts, stable record UUIDs/businessId on all operational records, atomic revisions/conflicts, deletion markers, migration of existing records, two-device transfers, app relaunch/session persistence tests, and server-authoritative booking reservations. Do not claim production-safe synchronization from this foundation.
+
+The updated iOS app builds successfully for generic iOS Simulator using full Xcode (`CODE_SIGNING_ALLOWED=NO`). This is compilation, not an executed device or session-persistence test.
