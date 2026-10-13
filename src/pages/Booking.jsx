@@ -7,6 +7,7 @@ import {
   CalendarDays,
 } from "lucide-react";
 import { ServiceIcon, Notice } from "../components/Shared";
+import GroomingPlans from "@/components/GroomingPlans";
 import {
   SERVICES,
   money,
@@ -505,6 +506,7 @@ export default function Booking({ appointments, onAdd }) {
           </aside>
         </div>
       </main>
+      <GroomingPlans />
     </>
   );
 }

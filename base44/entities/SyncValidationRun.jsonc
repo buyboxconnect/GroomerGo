@@ -1,0 +1,44 @@
+{
+  "name": "SyncValidationRun",
+  "type": "object",
+  "properties": {
+    "disposable": {
+      "type": "boolean",
+      "enum": [
+        true
+      ]
+    },
+    "ownerUserId": {
+      "type": "string"
+    },
+    "runId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "businessId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "capabilityHash": {
+      "type": "string"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "disposable",
+    "ownerUserId",
+    "runId",
+    "businessId",
+    "capabilityHash",
+    "expiresAt"
+  ],
+  "rls": {
+    "create": false,
+    "read": false,
+    "update": false,
+    "delete": false
+  }
+}

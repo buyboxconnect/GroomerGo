@@ -1,0 +1,57 @@
+{
+  "name": "AtomicCreationProbe",
+  "type": "object",
+  "properties": {
+    "disposable": {
+      "type": "boolean",
+      "enum": [
+        true
+      ]
+    },
+    "ownerUserId": {
+      "type": "string"
+    },
+    "runId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "businessId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "recordUUID": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "recordType": {
+      "type": "string",
+      "default": "service"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 0
+    },
+    "payloadJSON": {
+      "type": "string",
+      "default": ""
+    },
+    "receiptsJSON": {
+      "type": "string",
+      "default": "[]"
+    }
+  },
+  "required": [
+    "disposable",
+    "ownerUserId",
+    "runId",
+    "businessId",
+    "recordUUID"
+  ],
+  "rls": {
+    "create": false,
+    "read": false,
+    "update": false,
+    "delete": false
+  }
+}
