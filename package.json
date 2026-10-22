@@ -10,8 +10,8 @@
     "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
-    "@base44/sdk": "^0.8.54",
-    "@base44/vite-plugin": "^1.0.46",
+    "@base44/sdk": "^0.8.56",
+    "@base44/vite-plugin": "^1.0.47",
     "@radix-ui/react-label": "^2.1.2",
     "@radix-ui/react-slot": "^1.1.2",
     "@radix-ui/react-toast": "^1.2.2",
